@@ -9,22 +9,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
-        step: echo "Code clone from Github."
+        run: echo "Code clone from Github."
 
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Build the code
-        step: echo "Docker container has build"
+        run: echo "Docker container has build"
 
   test:
     runs-on: ubuntu-latest
     steps:
       - name: Testing the container
-        step: echo "Testig the container"
+        run: echo "Testig the container"
 
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Deploing the code
-        step: echo "Coad has been deploy"
+        run: echo "Coad has been deploy"
